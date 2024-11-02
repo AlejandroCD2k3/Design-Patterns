@@ -1,26 +1,23 @@
 package Main;
 
-import CreationalPatterns.Prototype.*;
+import CreationalPatterns.Builder.*;
 
 public class Main {
     
     public static void main(String[] args){
         
-        PrototypeRegistry prototypeRegistry = new PrototypeRegistry();
+        Chef chef = new Chef();
         
-        MinecraftSlime mySlimePrototype = new MinecraftSlime("Medium","Normal",10);
-        System.out.println("Prototype Stats: " + mySlimePrototype.getSize() + ", " + mySlimePrototype.getKindOfSlime() + ", " + mySlimePrototype.getHealthPoints());
-        prototypeRegistry.addPrototype("mediumMinecraftNormalSlime", mySlimePrototype);
+        PizzaBuilder smallPizzaBuilder = new SmallPizzaBuilder();
         
+        // --------- CREATING A PIZZA ---------
         
-        MinecraftSlime myClonedSlime = (MinecraftSlime) mySlimePrototype.clone();
-        System.out.println("Clone Stats: " + myClonedSlime.getSize() + ", " + myClonedSlime.getKindOfSlime() + ", " + myClonedSlime.getHealthPoints());
-    
-        MinecraftSlime anotherClonedSlime = (MinecraftSlime) prototypeRegistry.getById("mediumMinecraftNormalSlime");
-        System.out.println("Second Clone Stats: " + anotherClonedSlime.getSize() + ", " + anotherClonedSlime.getKindOfSlime() + ", " + anotherClonedSlime.getHealthPoints());
+        chef.createSmallPepperoniPizza(smallPizzaBuilder);
+        Pizza mySmallPizza = smallPizzaBuilder.build();
+        
+        System.out.println("Small Pizza created with: \n" + mySmallPizza.getCrust() + " crust\n" + mySmallPizza.getSauce() + " sauce\n" + mySmallPizza.getCheese() + " cheese \n" + mySmallPizza.getTopping() + " topping.");
         
     }
     
-    // The casting should be replaced with a factory method to add another layer of abstraction.
     
 }
