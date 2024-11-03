@@ -4,7 +4,7 @@ package CreationalPatterns.Singleton;
 
 public class MathOperations {
     
-    public static MathOperations mathOperations;
+    private static MathOperations mathOperations;
     
     private MathOperations(){
     }
