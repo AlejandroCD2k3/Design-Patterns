@@ -1,16 +1,15 @@
 package Main;
 
-import CreationalPatterns.Singleton.*;
+import CreationalPatterns.AbstractFactory.*;
 
 public class Main {
     
     public static void main(String[] args){
         
-        MathOperations mathOps = MathOperations.getMathOperations();
+        VehicleFactory sportsVehicleFactory = new SportsVehicleFactory();
         
-        System.out.println(mathOps.addNumbers(5, 2));
-        
+        Car sportsCar = sportsVehicleFactory.createCar(2, 2, 400);
+        System.out.println("Sports car type: " + sportsCar.getClass().getName());
     }
-    
     
 }
