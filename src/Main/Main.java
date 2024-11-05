@@ -1,15 +1,23 @@
 package Main;
 
-import CreationalPatterns.AbstractFactory.*;
+import StructuralPatterns.Adapter.*;
 
 public class Main {
     
     public static void main(String[] args){
         
-        VehicleFactory sportsVehicleFactory = new SportsVehicleFactory();
+        XMLReport xmlReport = new XMLReport();
         
-        Car sportsCar = sportsVehicleFactory.createCar(2, 2, 400);
-        System.out.println("Sports car type: " + sportsCar.getClass().getName());
+        System.out.println(xmlReport.generateXMLReport());
+        
+        // ADAPTING XML REPORT TO A JSON REPORT
+        
+        XMLReportAdapter xmlReportAdapter = new XMLReportAdapter();
+        
+        xmlReportAdapter.setXMLReport(xmlReport);
+        
+        System.out.println(xmlReportAdapter.generateReport());
+        
     }
     
 }
