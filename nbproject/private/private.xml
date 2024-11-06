@@ -3,16 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/CreationalPatterns/AbstractFactory/DeliveryCar.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/CreationalPatterns/AbstractFactory/SportsCar.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Adapter/XMLReportAdapter.java</file>
             <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/Main/Main.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/CreationalPatterns/AbstractFactory/Car.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/CreationalPatterns/AbstractFactory/VehicleFactory.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/CreationalPatterns/AbstractFactory/DeliveryVehicleFactory.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/CreationalPatterns/AbstractFactory/DeliveryMotorcycle.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/CreationalPatterns/AbstractFactory/SportsVehicleFactory.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/CreationalPatterns/AbstractFactory/Motorcycle.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/CreationalPatterns/AbstractFactory/SportsMotorcycle.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Adapter/XMLReport.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Adapter/ReportAdapter.java</file>
         </group>
     </open-files>
 </project-private>
