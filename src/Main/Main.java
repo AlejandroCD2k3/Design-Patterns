@@ -1,20 +1,24 @@
 package Main;
 
-import StructuralPatterns.Bridge.*;
+import StructuralPatterns.Decorator.*;
 
 
 public class Main {
     
     public static void main(String[] args){
         
-        Size smallSize = new SmallSize();
-        Size mediumSize = new MediumSize();
+        Beverage coffeeWithSugarAndMilkOrder = new SimpleCoffee();
         
-        Garment myPants = new Pants(smallSize);
-        Garment myShirt = new Shirt(mediumSize);
+        coffeeWithSugarAndMilkOrder = new Sugar(coffeeWithSugarAndMilkOrder);
+        coffeeWithSugarAndMilkOrder = new Milk(coffeeWithSugarAndMilkOrder);
         
-        myPants.displayDetails();
-        myShirt.displayDetails();
+        Beverage coffeeWithChocolateOrder = new SimpleCoffee();
+        
+        coffeeWithChocolateOrder = new Chocolate(coffeeWithChocolateOrder);
+        
+        System.out.println(coffeeWithSugarAndMilkOrder.trink());
+        System.out.println(coffeeWithChocolateOrder.trink());
+        
     }
  
 }

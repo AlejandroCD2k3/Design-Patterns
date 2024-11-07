@@ -3,12 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Composite/Multiplex.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Composite/CinemaComposite.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Bridge/Garment.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Bridge/Pants.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Bridge/MediumSize.java</file>
             <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/Main/Main.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Composite/Room.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Composite/IComponent.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Composite/Seat.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Bridge/Size.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Bridge/SmallSize.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Bridge/LargeSize.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Bridge/Shirt.java</file>
         </group>
     </open-files>
 </project-private>
