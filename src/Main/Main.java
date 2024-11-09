@@ -1,15 +1,14 @@
 package Main;
 
-import StructuralPatterns.Facade.*;
+import StructuralPatterns.Flyweight.*;
 
 
 public class Main {
     
     public static void main(String[] args){
         
-        Facade myFacade = new CoffeePreparationFacade();
-        
-        System.out.println(myFacade.prepareBeverage("mocha").trink());
+        Game myGame = new Game();
+        myGame.spawnNPC(20, 50, "Allison", "studentGirl", "sweet", "proactive");
         
     }
  

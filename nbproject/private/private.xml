@@ -3,13 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Decorator/Sugar.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Decorator/BeverageDecorator.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Decorator/Chocolate.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Facade/CoffeePreparationFacade.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Facade/Facade.java</file>
             <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/Main/Main.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Decorator/Milk.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Decorator/Beverage.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Decorator/SimpleCoffee.java</file>
         </group>
     </open-files>
 </project-private>
