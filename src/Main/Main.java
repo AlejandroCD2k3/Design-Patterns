@@ -1,14 +1,19 @@
 package Main;
 
-import StructuralPatterns.Flyweight.*;
+import StructuralPatterns.Proxy.*;
 
 
 public class Main {
     
     public static void main(String[] args){
         
-        Game myGame = new Game();
-        myGame.spawnNPC(20, 50, "Allison", "studentGirl", "sweet", "proactive");
+        UserApplication myApp =  new AuthenticationProxy("admin","notMyPassword");
+        System.out.println(myApp.getData());
+        
+        System.out.println("-------------------");
+        
+        myApp =  new AuthenticationProxy("admin","mySecurePassword");
+        System.out.println(myApp.getData());
         
     }
  
