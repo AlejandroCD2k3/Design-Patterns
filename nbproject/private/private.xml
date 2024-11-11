@@ -3,10 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Proxy/UserApplication.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Proxy/AuthenticationProxy.java</file>
             <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/Main/Main.java</file>
             <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Flyweight/Game.java</file>
             <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Flyweight/NPC.java</file>
             <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Flyweight/NPCFactory.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Proxy/UserService.java</file>
             <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/StructuralPatterns/Flyweight/NPCType.java</file>
         </group>
     </open-files>

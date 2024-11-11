@@ -1,19 +1,26 @@
 package Main;
 
-import StructuralPatterns.Proxy.*;
+import BehavioralPatterns.ChainOfResponsability.*;
 
 
 public class Main {
     
     public static void main(String[] args){
         
-        UserApplication myApp =  new AuthenticationProxy("admin","notMyPassword");
-        System.out.println(myApp.getData());
+        SupportHandler basicSupport = new AnsweringMachine();
+        SupportHandler intermediateSupport = new SupportAgent();
+        SupportHandler advancedSupport = new SpecializedEngenieer();
         
-        System.out.println("-------------------");
+        basicSupport.setNextHandler(intermediateSupport);
+        intermediateSupport.setNextHandler(advancedSupport);
         
-        myApp =  new AuthenticationProxy("admin","mySecurePassword");
-        System.out.println(myApp.getData());
+        basicSupport.handleRequest("basic");
+        System.out.println("--------------------------");
+        basicSupport.handleRequest("intermediate");
+        System.out.println("--------------------------");
+        basicSupport.handleRequest("advanced");
+        System.out.println("--------------------------");
+        basicSupport.handleRequest("expert");
         
     }
  
