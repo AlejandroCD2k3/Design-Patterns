@@ -1,26 +1,25 @@
 package Main;
 
-import BehavioralPatterns.ChainOfResponsability.*;
+import BehavioralPatterns.Command.*;
 
 
 public class Main {
     
     public static void main(String[] args){
         
-        SupportHandler basicSupport = new AnsweringMachine();
-        SupportHandler intermediateSupport = new SupportAgent();
-        SupportHandler advancedSupport = new SpecializedEngenieer();
+        Player mainCharacter = new Player();
         
-        basicSupport.setNextHandler(intermediateSupport);
-        intermediateSupport.setNextHandler(advancedSupport);
+        Command moveUpCommand = new MoveUpCommand(mainCharacter);
+        Command moveDownCommand = new MoveDownCommand(mainCharacter);
+        Command attackCommand = new AttackCommand(mainCharacter);
         
-        basicSupport.handleRequest("basic");
-        System.out.println("--------------------------");
-        basicSupport.handleRequest("intermediate");
-        System.out.println("--------------------------");
-        basicSupport.handleRequest("advanced");
-        System.out.println("--------------------------");
-        basicSupport.handleRequest("expert");
+        GameController gameController = new GameController();
+        
+        gameController.setMoveUpCommand(moveUpCommand);
+        gameController.setMoveDownCommand(moveDownCommand);
+        gameController.setAttackCommand(attackCommand);
+        
+        gameController.pressUp();
         
     }
  
