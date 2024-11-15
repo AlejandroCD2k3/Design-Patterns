@@ -1,22 +1,23 @@
 package Main;
 
-import BehavioralPatterns.Iterator.*;
+import BehavioralPatterns.Mediator.*;
 
 
 public class Main {
     
     public static void main(String[] args){
         
-        Library myLibrary = new Library(3);
-        myLibrary.addBook(new Book("The little Prince"));
-        myLibrary.addBook(new Book("One hundred years of solitude"));
-        myLibrary.addBook(new Book("War and peace"));
+        ChatMediator chatMediator = new ChatMediator();
         
-        Iterator<Book> orderedBookIterator = myLibrary.createOrderedIterator(0);
+        User michael = new ChatUser("Michael");
+        User allison = new ChatUser("Allison");
+        User claire = new ChatUser("Claire");
         
-        while(orderedBookIterator.hasNext()){
-            System.out.println(orderedBookIterator.next().getTitle());
-        }
+        chatMediator.addUser(michael);
+        chatMediator.addUser(allison);
+        chatMediator.addUser(claire);
+        
+        allison.sendMessage("Hello everyone! This is my first message");
         
     }
  
