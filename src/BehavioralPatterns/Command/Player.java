@@ -11,6 +11,6 @@ public class Player {
     }
     
     public void Attack(){
-        System.out.println("Attackingeseladomisteriosodelaisla");
+        System.out.println("Attacking");
     }
 }

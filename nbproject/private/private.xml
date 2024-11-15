@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/ChainOfResponsability/Handler.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/ChainOfResponsability/SpecializedEngenieer.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/Command/MoveUpCommand.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/Command/AttackCommand.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/Command/Command.java</file>
             <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/Main/Main.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/ChainOfResponsability/SupportAgent.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/ChainOfResponsability/SupportHandler.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/ChainOfResponsability/AnsweringMachine.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/Command/GameController.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/Command/MoveDownCommand.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/Command/Player.java</file>
         </group>
     </open-files>
 </project-private>

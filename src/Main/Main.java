@@ -1,25 +1,22 @@
 package Main;
 
-import BehavioralPatterns.Command.*;
+import BehavioralPatterns.Iterator.*;
 
 
 public class Main {
     
     public static void main(String[] args){
         
-        Player mainCharacter = new Player();
+        Library myLibrary = new Library(3);
+        myLibrary.addBook(new Book("The little Prince"));
+        myLibrary.addBook(new Book("One hundred years of solitude"));
+        myLibrary.addBook(new Book("War and peace"));
         
-        Command moveUpCommand = new MoveUpCommand(mainCharacter);
-        Command moveDownCommand = new MoveDownCommand(mainCharacter);
-        Command attackCommand = new AttackCommand(mainCharacter);
+        Iterator<Book> orderedBookIterator = myLibrary.createOrderedIterator(0);
         
-        GameController gameController = new GameController();
-        
-        gameController.setMoveUpCommand(moveUpCommand);
-        gameController.setMoveDownCommand(moveDownCommand);
-        gameController.setAttackCommand(attackCommand);
-        
-        gameController.pressUp();
+        while(orderedBookIterator.hasNext()){
+            System.out.println(orderedBookIterator.next().getTitle());
+        }
         
     }
  
