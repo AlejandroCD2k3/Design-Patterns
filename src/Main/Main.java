@@ -1,23 +1,35 @@
 package Main;
 
-import BehavioralPatterns.Mediator.*;
+import BehavioralPatterns.Memento.*;
 
 
 public class Main {
     
     public static void main(String[] args){
         
-        ChatMediator chatMediator = new ChatMediator();
+        Game residentEvil4 = new Game();
+        WritingMachine myWrittingMachine = new WritingMachine();
         
-        User michael = new ChatUser("Michael");
-        User allison = new ChatUser("Allison");
-        User claire = new ChatUser("Claire");
+        //------------------
         
-        chatMediator.addUser(michael);
-        chatMediator.addUser(allison);
-        chatMediator.addUser(claire);
+        residentEvil4.setState("Village", "Lake", 100);
+        residentEvil4.showState();
         
-        allison.sendMessage("Hello everyone! This is my first message");
+        myWrittingMachine.saveGame(residentEvil4.save());
+        
+        //------------------
+        
+        residentEvil4.setState("Castle", "Yard", 130);
+        residentEvil4.showState();
+        
+        myWrittingMachine.saveGame(residentEvil4.save());
+        
+        //------------------
+
+        
+        myWrittingMachine.loadGame(0);
+        
+        residentEvil4.showState();
         
     }
  
