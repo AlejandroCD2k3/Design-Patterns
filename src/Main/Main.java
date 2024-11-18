@@ -1,27 +1,39 @@
 package Main;
 
-import BehavioralPatterns.Observer.*;
+import BehavioralPatterns.State.*;
 
 
 public class Main {
     
     public static void main(String[] args){
         
-        YoutubeChannel braisMoure = new YoutubeChannel("MoureDev");
+        CandyMachine candyMachine = new CandyMachine(3);
+
+        candyMachine.insertCoin();
+        candyMachine.turnCrank();
+        candyMachine.dispenseCandy();
         
-        Subscriber ariadna123 = new YoutubeSubscriber("ariadna123");
-        Subscriber preston48 = new YoutubeSubscriber("preston48");
-        Subscriber proprogrammer = new YoutubeSubscriber("proprogrammer");
+        System.out.println("-----------------");
+
+        candyMachine.insertCoin();
+        candyMachine.ejectCoin();
+        candyMachine.dispenseCandy();
+
+        System.out.println("-----------------");
         
-        braisMoure.subscribe(ariadna123);
-        braisMoure.subscribe(preston48);
-        braisMoure.subscribe(proprogrammer);
+        candyMachine.insertCoin();
+        candyMachine.turnCrank();
+        candyMachine.dispenseCandy();
         
-        braisMoure.uploadVideo("SOLID Principles from cero");
+        System.out.println("-----------------");
         
-        braisMoure.unsubscribe(preston48);
+        candyMachine.insertCoin();
+        candyMachine.turnCrank();
+        candyMachine.dispenseCandy();
         
-        braisMoure.uploadVideo("Advanced web Python");
+        System.out.println("-----------------");
+
+        candyMachine.insertCoin(); // No candies left
         
     }
  
