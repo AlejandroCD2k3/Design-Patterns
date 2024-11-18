@@ -1,35 +1,27 @@
 package Main;
 
-import BehavioralPatterns.Memento.*;
+import BehavioralPatterns.Observer.*;
 
 
 public class Main {
     
     public static void main(String[] args){
         
-        Game residentEvil4 = new Game();
-        WritingMachine myWrittingMachine = new WritingMachine();
+        YoutubeChannel braisMoure = new YoutubeChannel("MoureDev");
         
-        //------------------
+        Subscriber ariadna123 = new YoutubeSubscriber("ariadna123");
+        Subscriber preston48 = new YoutubeSubscriber("preston48");
+        Subscriber proprogrammer = new YoutubeSubscriber("proprogrammer");
         
-        residentEvil4.setState("Village", "Lake", 100);
-        residentEvil4.showState();
+        braisMoure.subscribe(ariadna123);
+        braisMoure.subscribe(preston48);
+        braisMoure.subscribe(proprogrammer);
         
-        myWrittingMachine.saveGame(residentEvil4.save());
+        braisMoure.uploadVideo("SOLID Principles from cero");
         
-        //------------------
+        braisMoure.unsubscribe(preston48);
         
-        residentEvil4.setState("Castle", "Yard", 130);
-        residentEvil4.showState();
-        
-        myWrittingMachine.saveGame(residentEvil4.save());
-        
-        //------------------
-
-        
-        myWrittingMachine.loadGame(0);
-        
-        residentEvil4.showState();
+        braisMoure.uploadVideo("Advanced web Python");
         
     }
  
