@@ -1,28 +1,25 @@
 package Main;
 
-import BehavioralPatterns.TemplateMethod.*;
+import BehavioralPatterns.Visitor.*;
 
 
 public class Main {
     
     public static void main(String[] args){
         
-        Authentication authentication;
+        Shape circle = new Circle(5);
+        Shape rectangle = new Rectangle(4,6);
         
-        System.out.println("Authenticating with Database:");
-        authentication = new DatabaseAuthentication();
-        authentication.authenticateUser("admin", "1234");
+        ShapeVisitor areaCalculator = new AreaCalculator();
+        ShapeVisitor perimeterCalculator = new PerimeterCalculator();
         
-        System.out.println("---------------------------------");
+        System.out.println("Calculating areas:");
+        circle.acceptVisitor(areaCalculator);
+        rectangle.acceptVisitor(areaCalculator);
         
-        System.out.println("\nAuthenticating with LDAP:");
-        authentication = new LDAPAuthentication();
-        authentication.authenticateUser("user", "1234");
-        
-        System.out.println("---------------------------------");
-        
-        System.out.println("Authenticating invalid user");
-        authentication.authenticateUser("notAValidUser", "notAValidPassword");
+        System.out.println("-----------------------\nCalculating perimeters:");
+        circle.acceptVisitor(perimeterCalculator);
+        rectangle.acceptVisitor(perimeterCalculator);
         
     }
  
