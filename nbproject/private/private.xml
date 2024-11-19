@@ -3,12 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/Memento/Game.java</file>
             <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/Main/Main.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/Memento/Memento.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/Memento/Originator.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/Memento/GameSave.java</file>
-            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/Memento/WritingMachine.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/State/CandyMachine.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/State/HasCoinState.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/State/NoCoinState.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/State/SoldOutState.java</file>
+            <file>file:/C:/Users/USER/Documents/Programación/JAVA/Design-Patterns/src/BehavioralPatterns/State/DispensingState.java</file>
         </group>
     </open-files>
 </project-private>

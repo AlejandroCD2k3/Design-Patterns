@@ -1,40 +1,30 @@
 package Main;
 
-import BehavioralPatterns.State.*;
+import BehavioralPatterns.Strategy.*;
 
 
 public class Main {
     
     public static void main(String[] args){
         
-        CandyMachine candyMachine = new CandyMachine(3);
-
-        candyMachine.insertCoin();
-        candyMachine.turnCrank();
-        candyMachine.dispenseCandy();
+        ShippingStrategy groundShipping = new GroundShipping();
+        ShippingStrategy airShipping = new AirShipping();
+        ShippingStrategy seaShipping = new SeaShipping();
         
-        System.out.println("-----------------");
-
-        candyMachine.insertCoin();
-        candyMachine.ejectCoin();
-        candyMachine.dispenseCandy();
-
-        System.out.println("-----------------");
+        double weight = 12.5;
         
-        candyMachine.insertCoin();
-        candyMachine.turnCrank();
-        candyMachine.dispenseCandy();
+        ShippingService shippingService = new ShippingService(groundShipping);
+        System.out.println(String.format("Ground shipping cost: $%f", shippingService.calculateCost(weight)));
         
-        System.out.println("-----------------");
+        System.out.println("--------------------");
         
-        candyMachine.insertCoin();
-        candyMachine.turnCrank();
-        candyMachine.dispenseCandy();
+        shippingService.setStrategy(airShipping);
+        System.out.println(String.format("Air shipping cost: $%f", shippingService.calculateCost(weight)));
         
-        System.out.println("-----------------");
-
-        candyMachine.insertCoin(); // No candies left
+        System.out.println("--------------------");
         
+        shippingService.setStrategy(seaShipping);
+        System.out.println(String.format("Sea shipping cost: $%f", shippingService.calculateCost(weight)));
     }
  
 }
